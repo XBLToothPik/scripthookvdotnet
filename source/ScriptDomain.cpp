@@ -156,7 +156,7 @@ namespace GTA
 		}
 
 		CodeDom::Compiler::CompilerParameters ^compilerOptions = gcnew CodeDom::Compiler::CompilerParameters();
-		compilerOptions->CompilerOptions = "/optimize";
+		compilerOptions->CompilerOptions = "/optimize /unsafe";
 		compilerOptions->GenerateInMemory = true;
 		compilerOptions->IncludeDebugInformation = true;
 		compilerOptions->ReferencedAssemblies->Add("System.dll");
